@@ -12,5 +12,19 @@ Console.WriteLine($"Случайное число из диапазона 10-99 
 int firstDigit = number / 10;
 int secondDigit = number % 10;
 
-if(firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра полученного числа = {firstDigit}");
-else Console.WriteLine($"Наибольшая цифра полученного числа = {secondDigit}");
+// if(firstDigit > secondDigit) 
+// {
+//     Console.WriteLine($"Наибольшая цифра полученного числа = {firstDigit}");
+// }
+// else 
+// {
+//     Console.WriteLine($"Наибольшая цифра полученного числа = {secondDigit}");
+// }
+
+// тернарный оператор
+//Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit);
+
+// можно также добавить переменную
+// 
+int result = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.Write($"Наибольшая цифра полученного числа = {result}");
