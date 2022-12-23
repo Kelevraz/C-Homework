@@ -21,3 +21,5 @@ int MaxDigit(int number)
     int result = firstDigit > secondDigit ? firstDigit : secondDigit;
     return result;
 }
+// либо так
+// return firstDigit > secondDigit ? firstDigit : secondDigit;
