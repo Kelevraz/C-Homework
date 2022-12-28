@@ -45,9 +45,9 @@
 
 int InsertPositon(string text)
 {
-Console.WriteLine(text);
-int pos = Convert.ToInt32(Console.ReadLine());
-return pos;
+    Console.WriteLine(text);
+    int pos = Convert.ToInt32(Console.ReadLine());
+    return pos;
 }
 
 int x1 = InsertPositon("Введите координату Х первой точки:");
@@ -58,12 +58,13 @@ int y2 = InsertPositon("Введите координату Y второй то�
 
 double LenghtLine(int xpos1, int xpos2, int ypos1, int ypos2)
 {
-int temp = (xpos1-xpos2)*(xpos1-xpos2) + (ypos1-ypos2)*(ypos1-ypos2);
-return Math.Sqrt(temp);
+    int temp = (xpos1 - xpos2) * (xpos1 - xpos2) + (ypos1 - ypos2) * (ypos1 - ypos2);
+    return Math.Sqrt(temp);
 }
 
-double res = LenghtLine(x1,x2,y1,y2);
+double res = LenghtLine(x1, x2, y1, y2);
 
-double resRound = Math.Round(res,2,MidpointRounding.ToZero);
+double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
 
 Console.WriteLine($"Растояние между точками равно : {resRound}");
+
