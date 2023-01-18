@@ -22,6 +22,6 @@ int result = Convert.ToInt32(Console.ReadLine());
 return result;
 }
 
-int num = InsertDigit("Введите число: ");
-int mult = Multiply(num);
+int number = InsertDigit("Введите число: ");
+int mult = Multiply(number);
 System.Console.WriteLine(mult);
