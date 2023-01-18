@@ -9,8 +9,8 @@ Console.WriteLine("Введите число");
 int number = int.Parse(Console.ReadLine());
 //int number = Convert.ToInt32(Console.ReadLine());
 
-int sumNumbers = SumNumbers(number);
-Console.WriteLine($"Сумма числе от 1 до {number} = {sumNumbers}");
+//int sumNumbers = SumNumbers(number);
+Console.WriteLine($"Сумма числе от 1 до {number} = {SumNumbers(number)}");
 
 int SumNumbers (int num) // num = number
 {
